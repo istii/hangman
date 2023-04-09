@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: hotpink;
+    color: white;
+    transition: background-color 1s;
+}
+
+.game-container {
+    display: inline-block;
+    text-align: center;
+    background-color: brightgreen;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.word-display {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.used-letters {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    background-color: white;
+    color: brightgreen;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+button:hover {
+    background-color: brightgreen;
+    color: white;
+}
+
+input[type="text"] {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+.letter-buttons {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.letter-button {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    margin: 0.2rem;
+    cursor: pointer;
+    background-color: white;
+    color: brightgreen;
+    border: none;
+    border-radius: 0.5rem;
+    transition: transform 0.2s;
+}
+
+.letter-button:hover {
+    background-color: brightgreen;
+    color: white;
+    transform: scale(1.2);
+}
+
+.letter-button.disabled {
+    background-color: gray;
+    color: white;
+    cursor: not-allowed;
+}
+#new-game {
+    margin-left: 1rem;
+}
+.letter-button.correct {
+    background-color: green;
+    color: white;
+  }
+  
+  .letter-button.incorrect {
+    background-color: red;
+    color: white;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .word-display {
+    animation: fadeIn 1s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-out;
+  }
+  
